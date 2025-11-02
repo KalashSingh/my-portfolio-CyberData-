@@ -40,8 +40,8 @@ function App() {
       } else if (lowerCommand === 'download') {
         // This creates a temporary, invisible link and "clicks" it
         const link = document.createElement('a');
-        link.href = '/resume.pdf'; // The path in the 'public' folder
-        link.download = 'Kalash_Rajput_Resume.pdf'; // The name it saves as
+        link.href = '/Kalash_Resume.pdf'; // The path in the 'public' folder
+        link.download = 'Kalash_Resume.pdf'; // The name it saves as
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
