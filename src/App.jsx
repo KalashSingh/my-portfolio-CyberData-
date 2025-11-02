@@ -32,11 +32,21 @@ function App() {
       } else if (lowerCommand === 'contact') {
         result = `Email: ${resumeData.contact.email}\nLinkedIn: ${resumeData.contact.linkedin}\nGitHub: ${resumeData.contact.github}`;
       } else if (lowerCommand === 'help') {
-        result = 'Available commands:\n  whoami  - About me\n  contact - Display contact information\n  skills  - List my technical skills\n  projects- List my projects\n  clear   - Clear the terminal';
+        result = 'Available commands:\n  whoami  - About me\n  contact - Display contact information\n  skills  - List my technical skills\n  projects- List my projects\n  download- Download my PDF resume\n  clear   - Clear the terminal';
       } else if (lowerCommand === 'skills') {
         result = `Languages: ${resumeData.skills.Languages}\nData: ${resumeData.skills.Data}\nTools: ${resumeData.skills.Tools}`;
       } else if (lowerCommand === 'projects') {
         result = `Expense Agent: ${resumeData.projects['expense-agent']}\nData Viz: ${resumeData.projects['data-viz']}`;
+      } else if (lowerCommand === 'download') {
+        // This creates a temporary, invisible link and "clicks" it
+        const link = document.createElement('a');
+        link.href = '/resume.pdf'; // The path in the 'public' folder
+        link.download = 'Kalash_Rajput_Resume.pdf'; // The name it saves as
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      
+        result = 'Downloading resume...';
       } else if (lowerCommand === 'clear') {
         setHistory([]); // Special case: clear the history
         setCommand(''); // Clear the input
