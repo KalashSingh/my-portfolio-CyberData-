@@ -1,0 +1,17 @@
+{
+    "summary": "Detail-oriented and motivated Computer Science Engineering student (6th Semester) with a strong passion for Cybersecurity, AI/ML, and Data Analytics.",
+    "contact": {
+      "email": "kalashsingh0000@gmail.com",
+      "linkedin": "linkedin.com/in/kash0000",
+      "github": "github.com/KalashSingh"
+    },
+    "skills": {
+      "Languages": "Python, Java, C, SQL (Basic)",
+      "Data": "Pandas, NumPy, Matplotlib, Scikit-learn (Basic)",
+      "Tools": "Git, GitHub, Linux CLI, VS Code"
+    },
+    "projects": {
+      "expense-agent": "AI Agent for Expense Anomaly & Compliance",
+      "data-viz": "Data Analytics & Visualization Project"
+    }
+  }

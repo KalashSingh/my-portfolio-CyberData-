@@ -1,0 +1,49 @@
+/* Use a dark background and green text for the whole page */
+body {
+  background-color: #000;
+  color: #00FF00; /* Green text */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* This is the main terminal window */
+.terminal {
+  padding: 10px;
+  height: 100vh; /* Full screen height */
+  overflow-y: auto; /* Lets you scroll if it gets too long */
+}
+
+/* This is the line where the user types */
+.input-line {
+  display: flex;
+}
+
+.terminal-input {
+  background-color: transparent;
+  border: none;
+  color: #00FF00;
+  font-family: inherit;
+  font-size: 1em;
+  width: 100%; /* Make it fill the rest of the line */
+}
+
+/* Removes the ugly outline when you click it */
+.terminal-input:focus {
+  outline: none;
+}
+
+/* The prompt text before the input */
+.prompt {
+  color: #00FF00; /* Green prompt */
+  margin-right: 8px;
+}
+
+/* Style for the command output */
+.output {
+  color: #FFF; /* White output */
+  white-space: pre-wrap; /* Keeps newlines from your JSON */
+}
+
+/* Style for the echoed command */
+.command-echo {
+  color: #00FF00; /* Green */
+}
